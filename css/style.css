@@ -566,14 +566,15 @@ img {
   line-height: 1.71;
   letter-spacing: 0.03em;
   text-transform: uppercase;
-}
-
-.social-text {
   margin-bottom: 20px;
 }
 
 .footer-item {
   margin-right: 70px;
+}
+
+.footer-social {
+  margin-right: 93px;
 }
 
 .footer-social-list {
@@ -607,6 +608,48 @@ img {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-property: background-color;
 }
+
+.email-text{
+  color: var(--color-white);
+  font-weight: 700;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+
+.footer-email input {
+  width: 358px;
+  height: 50px;
+  padding: 16px;
+  background-color: transparent;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  font-size: 16px;
+  letter-spacing: 0.03em;
+  color: rgba(255, 255, 255, 0.6);
+  border-radius: 4px;
+}
+
+.footer-email button {
+  width: 200px;
+  height: 50px;
+  margin-left: 12px;
+  background-color: var(--color-primary-hover);
+  border-radius: 4px;
+  letter-spacing: 0.06em;
+  color: var(--color-white);
+  font-size: 16px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+
+}
+
+.email-input-form  {
+  display: flex;
+}
+
+
+
 /* end footer */
 
 /* start backdrop */
