@@ -71,9 +71,9 @@
             Ефективні рішення для <br />
             вашого бізнесу
           </h1>
-            <button class="main-button" type="button" data-modal-open>Замовити послугу</button>
-              
-          
+          <button class="main-button" type="button" data-modal-open>
+            Замовити послугу
+          </button>
         </div>
       </section>
 
@@ -520,35 +520,77 @@
           <div class="footer-email">
             <p class="email-text">Підпишіться на розсилку</p>
             <form action="" class="email-input-form">
-            <input type="text" placeholder="E-mail">
-            <button type="submit" class="btn-footer-input">Підписатися
-              <svg class="email-button-telegram" width="24" height="24">
-                <use href="./images/svg/symbol-defs.svg#icon-icon-send">
-                </use>
-              </svg>
-            </button>
+              <input type="text" placeholder="E-mail" />
+              <button type="submit" class="btn-footer-input">
+                Підписатися
+                <svg class="email-button-telegram" width="24" height="24">
+                  <use href="./images/svg/symbol-defs.svg#icon-icon-send"></use>
+                </svg>
+              </button>
             </form>
           </div>
         </div>
       </div>
     </footer>
-    <div class="backdrop is-hidden" data-modal>
+    <div class="backdrop " data-modal>
       <div class="modal">
         <button type="button" class="modal-close-btn" data-modal-close>
           <svg class="modal-close" width="18" height="18">
             <use href="./images/svg/symbol-defs.svg#icon-close"></use>
           </svg>
-        </button>  
+        </button>
+
         <form action="" class="contacts-form">
-        <p class="modal-title">Залиште свої дані, ми вам передзвонимо</p>
-        <label class="contacts-form-field">Ім'я
-          <input name="user-name" class="contact-field-name">
-        </label> 
-        <label class="contacts-form-field">Телефон
-          <input name="user-phone" class="contact-field-phone">
-        </label> 
-          <input name="user-phone" class="contact-field-phone">
-        </label> 
+          <p class="modal-title">Залиште свої дані, ми вам передзвонимо</p>
+          <label class="contacts-form-field"
+            >
+            <span class="contacts-form-field-wrapper">
+            <span class="user">Ім'я</span> 
+            <input name="user-name" class="contact-field-name contact-field" />
+            <svg class="contacts-form-icon" width="18" height="18">
+              <use href="./images/svg/symbol-defs.svg#icon-person-black"></use>
+            </svg>
+            </span>
+
+          </label>
+          <label class="contacts-form-field"
+            >
+
+            
+            <span class="contacts-form-field-wrapper">
+            <span class="user">Телефон</span> 
+            <input name="user-name" class="contact-field-phone contact-field" />
+            <svg class="contacts-form-icon" width="18" height="18">
+              <use href="./images/svg/symbol-defs.svg#icon-phone-black"></use>
+            </svg>
+          </span>
+          </label>
+          <label class="contacts-form-field"
+            >
+            <span class="contacts-form-field-wrapper">
+            <span class="user">Пошта</span> 
+            <input name="user-name" class="contact-field-mail contact-field" />
+            <svg class="contacts-form-icon" width="18" height="18">
+              <use href="./images/svg/symbol-defs.svg#icon-email-black"></use>
+            </svg>
+          </span>
+          </label>
+
+          <span class="user">Коментар</span> 
+          <textarea
+            name="user-message"
+            class="contact-field-message contact-field"
+            placeholder="Введіть текст"
+          ></textarea>
+
+          <div class="contact-form-text">
+            <input id="check" type="checkbox"  class="contact-form-text-desc"/>
+          <label for="check" required
+            >Погоджуюся з розсилкою та приймаю
+            <a href="" class="contacts-form-link">Умови договору</a>
+          </label>
+          </div>
+          <button type="button" class="contacts-form-btn">Відправити</button>
         </form>
       </div>
     </div>
