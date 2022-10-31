@@ -733,7 +733,6 @@ img {
   width: 100%;
   height: 40px;
   border: 1px solid rgba(33, 33, 33, 0.2);
-  border-radius: 4px;
   margin-top: 4px;
 }
 
@@ -741,7 +740,7 @@ img {
   width: 100%;
   height: 100px;
   padding: 16px 12px;
-  margin-top: 10px;
+  margin-top: 4px;
   margin-bottom: 20px;
   resize: none;
 }
@@ -759,6 +758,8 @@ img {
   position: relative;
   display: block;
 }
+
+
 
 .contact-field:focus + .contacts-form-icon {
   fill: var(--color-primary-hover);
@@ -784,7 +785,91 @@ img {
 
 .contact-field{
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  border-radius: 4px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
 }
+
+.contacts-form-message-wrapper{
+  display: block;
+  margin-top: 10px;
+}
+
+.contact-field-message::placeholder{
+font-size: 12px;
+line-height: 14px;
+letter-spacing: 0.01em;
+color: rgba(117, 117, 117, 0.5);
+
+}
+
+.contact-form-text-info{
+font-size: 14px;
+line-height: 1.71;
+letter-spacing: 0.03em;
+color:var(--secondary-color);
+display: flex;
+align-items: center;
+}
+
+.contact-form-text-info::before{
+  content: "";
+  display:inline-block;
+  width: 16px;
+  height: 15px;
+  border: 1px solid var(--main-color-link); 
+  border-radius: 3px; 
+  cursor: pointer;
+  margin-right: 10px;
+}
+
+.contact-form-text-desc:checked + .contact-form-text-info::before {
+  background-color: var(--color-btn-banner-hover);
+  background-image: url("../images/svg/Vector.svg");
+  background-size: contain;
+  background-origin: border-box;
+  border-color: var(--color-btn-banner-hover);
+  background-position: center;
+} 
+
+.contact-form-text-desc:checked + .contact-form-text-info{
+    border-color: var(--color-btn-banner-hover);
+}
+
+
+.contacts-form-link{
+  color:var(--color-primary-hover);
+  
+}
+
+.contact-form-text-desc:focus + .contact-form-text-info::before {
+  background-color: var(--color-primary-hover);
+}   
+
+.contacts-form-btn{
+  color: var(--color-white);
+  letter-spacing: 0.06em;
+  background-color: var(--color-primary-hover);
+  line-height: 1.88;
+  width: 200px;
+  cursor: pointer;
+  font-family: var(--primary-font-famaly);
+  font-weight: 700;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 30px;
+  display: block;
+  border-radius: 4px;
+  border: none;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  font-size: 16px;
+  transition-property: background-color;
+  padding: 10px 32px;
+}
+
+.contacts-form-btn:hover{
+  background-color: var(--color-btn-banner-hover);
+} 
 /* end backdrop */
 
 /*start style portfolio */
@@ -933,3 +1018,4 @@ img {
   opacity: 1;
   top: 20%;
 }
+
