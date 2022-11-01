@@ -570,11 +570,11 @@ img {
 }
 
 .footer-item {
-  margin-right: 70px;
+  margin-right: 100px;
 }
 
 .footer-social {
-  margin-right: 93px;
+  margin-right: auto;
 }
 
 .footer-social-list {
@@ -634,6 +634,7 @@ img {
 .email-input-form {
   display: flex;
 }
+
 .btn-footer-input {
   font-size: 16px;
   letter-spacing: 0.06em;
@@ -646,6 +647,7 @@ img {
   padding: 10px 32px;
   border-radius: 4px;
   border: none;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-property: background-color;
@@ -859,6 +861,7 @@ align-items: center;
   margin-top: 30px;
   display: block;
   border-radius: 4px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border: none;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
