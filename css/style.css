@@ -870,8 +870,10 @@ align-items: center;
   padding: 10px 32px;
 }
 
-.contacts-form-btn:hover{
+.contacts-form-btn:hover,
+.contacts-form-btn:focus{
   background-color: var(--color-btn-banner-hover);
+  
 } 
 /* end backdrop */
 
