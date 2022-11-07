@@ -786,6 +786,7 @@ img {
   color: var(--secondary-color);
   display: flex;
   align-items: center;
+  margin-left: 12px;
 }
 
 .contact-form-text-info::before {
