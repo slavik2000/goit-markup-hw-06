@@ -893,6 +893,8 @@ img {
 .portfolio-content {
   padding: 20px;
   border: 1px solid #eeeeee;
+  /* position: relative; */
+  /* background-color: var(--color-white); */
 }
 
 .portfolio-list {
@@ -932,6 +934,7 @@ img {
 
 .portfolio-wrapper {
   position: relative;
+  overflow:hidden;
 }
 
 .portfolio-wrapper:hover::before {
