@@ -1,21 +1,3 @@
-:root {
-  --color-primary-hover: #2196f3;
-  --color-banner: #2f303a;
-  --color-btn-banner-hover: #188ce8;
-  --color-black: #000000;
-  --color-white: #ffffff;
-  --color-gray: #f5f4fa;
-  --primary-color: #212121;
-  --secondary-color: #757575;
-  --color-svg: #afb1b8;
-  --primary-font-famaly: "Roboto", sans-serif;
-  --secondary-font-famaly: "Raleway", sans-serif;
-  --main-font-size: 14px;
-  --main-letter-spacing: 0.03em;
-  --main-color-link: #212121;
-  --secondary-color-link: #757575;
-}
-
 body {
   background-color: var(--color-white);
   font-family: var(--primary-font-famaly);
@@ -41,10 +23,13 @@ ul {
   margin-bottom: 0;
 }
 
-img {
-  /* display: block;
-  max-width: 100%;
-  height: auto; */
+.link {
+  text-decoration: none;
+  color: var(--main-color-link);
+}
+
+.list {
+  list-style: none;
 }
 
 .visually-hidden {
@@ -58,6 +43,15 @@ img {
   clip-path: inset(100%);
   clip: rect(0 0 0 0);
   overflow: hidden;
+}
+
+.link {
+  text-decoration: none;
+  color: var(--main-color-link);
+}
+
+.list {
+  list-style: none;
 }
 
 .section {
@@ -80,15 +74,6 @@ img {
 .header-container {
   display: flex;
   align-items: center;
-}
-
-.link {
-  text-decoration: none;
-  color: var(--main-color-link);
-}
-
-.list {
-  list-style: none;
 }
 
 /* start header */
@@ -115,30 +100,27 @@ img {
 .logo .logo-light {
   color: var(--color-white);
 }
-.logo-light {
-  /* color: var(--color-white); */
-}
 
-.nav-list {
+.nav {
   font-weight: 500;
   letter-spacing: 0.02em;
   display: flex;
   margin-left: 94px;
 }
 
-.nav-item {
+.nav__item {
   margin-right: 52px;
 }
-.nav-item:last-child {
+.nav__item:last-child {
   margin-right: 0;
 }
 
-.nav-link:hover,
-.nav-link:focus {
+.nav__link:hover,
+.nav__link:focus {
   color: var(--color-primary-hover);
 }
 
-.nav-link {
+.nav__link {
   font-weight: 500;
   padding-top: 32px;
   padding-bottom: 32px;
@@ -169,15 +151,15 @@ img {
   font-weight: 500;
   display: flex;
 }
-.contacts-item {
+.contacts-header__item {
   letter-spacing: 0.02em;
 }
-.contacts-item:not(:last-child) {
+.contacts-header__item:not(:last-child) {
   margin-right: 50px;
 }
 
-.contacts-mail,
-.contacts-number {
+.contacts-header__mail,
+.contacts-header__number {
   color: var(--secondary-color-link);
   padding-top: 32px;
   padding-bottom: 32px;
@@ -188,7 +170,7 @@ img {
   transition-property: color;
 }
 
-.contacts-item:hover {
+.contacts-header__item:hover {
   fill: var(--color-primary-hover);
 }
 
@@ -196,14 +178,14 @@ img {
   color: var(--color-primary-hover);
 }
 
-.contacts-mail:hover,
-.contacts-mail:focus,
-.contacts-number:hover,
-.contacts-number:focus {
+.contacts-header__mail:hover,
+.contacts-header__mail:focus,
+.contacts-header__number:hover,
+.contacts-header__number:focus {
   color: var(--color-primary-hover);
 }
 
-.contacts-mail-icon {
+.contacts-header__mail-icon {
   fill: currentColor;
   margin-right: 10px;
   transition-duration: 250ms;
@@ -211,12 +193,12 @@ img {
   transition-property: fill;
 }
 
-.contacts-mail-icon:hover,
-.contacts-mail-icon:focus {
+.contacts-header__mail-icon:hover,
+.contacts-header__mail-icon:focus {
   fill: var(--color-primary-hover);
 }
 
-.contacts-number-icon {
+.contacts-header__number-icon {
   fill: currentColor;
   margin-right: 10px;
   transition-duration: 250ms;
@@ -224,8 +206,8 @@ img {
   transition-property: fill;
 }
 
-.contacts-number-icon:hover,
-.contacts-number-icon:focus {
+.contacts-header__number-icon:hover,
+.contacts-header__number-icon:focus {
   fill: var(--color-primary-hover);
 }
 
@@ -248,11 +230,11 @@ img {
   margin-right: auto;
 }
 
-.main-list-page {
+.main-list {
   padding-top: 94px;
 }
 
-.list-page {
+.main-list__list-page {
   display: flex;
 }
 
@@ -326,11 +308,11 @@ img {
   margin-left: 0;
 }
 
-.item-page:not(:last-child) {
+.main-list__item-page:not(:last-child) {
   margin-right: 30px;
 }
 
-.item-page {
+.main-list__item-page{
   width: 270px;
 }
 
@@ -696,13 +678,13 @@ img {
 }
 
 .modal-close-btn:hover .modal-close use,
-.modal-close-btn:focus-visible .modal-close use{
-fill: var(--color-primary-hover);
-transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+.modal-close-btn:focus-visible .modal-close use {
+  fill: var(--color-primary-hover);
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.modal-close-btn .modal-close use{
-transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+.modal-close-btn .modal-close use {
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal-title {
@@ -945,7 +927,7 @@ transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
 .portfolio-wrapper {
   position: relative;
-  overflow:hidden;
+  overflow: hidden;
 }
 
 .portfolio-wrapper:hover::before {

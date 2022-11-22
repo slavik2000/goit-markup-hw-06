@@ -18,7 +18,9 @@
       referrerpolicy="no-referrer"
     />
     <!-- <link rel="stylesheet" href="./css/style.css" /> -->
-    <link rel="stylesheet" href="./css/main.css" />
+    <!-- <link rel="stylesheet" href="./css/main.css" /> -->
+    <!-- <link rel="stylesheet" href="./sass/main.scss" /> -->
+    <link rel="stylesheet" href="./css/main.min.css" />
     <title>Document</title>
   </head>
   <body>
@@ -29,22 +31,25 @@
           <a class="logo link" href="" lang="en"
             >Web<span class="logo-dark">Studio</span>
           </a>
-          <ul class="nav-list list">
-            <li class="nav-item">
-              <a class="nav-link link active" href="./index.html">Студія</a>
+          <ul class="nav list">
+            <li class="nav__item">
+              <a class="nav__link link active" href="./index.html">Студія</a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link link" href="./portfolio.html"> Портфоліо</a>
+            <li class="nav__item">
+              <a class="nav__link link" href="./portfolio.html"> Портфоліо</a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link link" href="">Контакти</a>
+            <li class="nav__item">
+              <a class="nav__link link" href="">Контакти</a>
             </li>
           </ul>
         </nav>
         <ul class="contacts-header list">
-          <li class="contacts-item">
-            <a class="contacts-mail link" href="mailto:info@devstudio.com">
-              <svg class="contacts-mail-icon" width="16" height="12">
+          <li class="contacts-header__item">
+            <a
+              class="contacts-header__mail link"
+              href="mailto:info@devstudio.com"
+            >
+              <svg class="contacts-header__mail-icon" width="16" height="12">
                 <use
                   href="./images/svg/symbol-defs.svg#icon-envelope-hover"
                 ></use>
@@ -52,9 +57,9 @@
               info@devstudio.com</a
             >
           </li>
-          <li class="contacts-item">
-            <a class="contacts-number link" href="tel:+380961111111">
-              <svg class="contacts-number-icon" width="10" height="16">
+          <li class="contacts-header__item">
+            <a class="contacts-header__number link" href="tel:+380961111111">
+              <svg class="contacts-header__number-icon" width="10" height="16">
                 <use href="./images/svg/symbol-defs.svg#icon-smartphone"></use>
               </svg>
               +38 096 111 11 11</a
@@ -77,12 +82,12 @@
         </div>
       </section>
 
-      <!-- main-list-page -->
-      <section class="main-list-page">
+      <!-- main-list -->
+      <section class="main-list">
         <div class="container">
           <h2 class="visually-hidden">Особливості бізнесу</h2>
-          <ul class="list-page list">
-            <li class="item-page">
+          <ul class="main-list__list-page list">
+            <li class="main-list__item-page">
               <div class="item-page-bg">
                 <svg class="item-page-svg">
                   <use
@@ -96,7 +101,7 @@
                 формування позиції.
               </p>
             </li>
-            <li class="item-page">
+            <li class="main-list__item-page">
               <div class="item-page-bg">
                 <svg class="item-page-svg">
                   <use href="./images/svg/symbol-defs.svg#icon-clock-1 "></use>
@@ -108,7 +113,7 @@
                 тягне у себе.
               </p>
             </li>
-            <li class="item-page">
+            <li class="main-list__item-page">
               <div class="item-page-bg">
                 <svg class="item-page-svg">
                   <use href="./images/svg/symbol-defs.svg#icon-diagram-1"></use>
@@ -119,7 +124,7 @@
                 Так само консультація з широким активом значною мірою зумовлює.
               </p>
             </li>
-            <li class="item-page">
+            <li class="main-list__item-page">
               <div class="item-page-bg">
                 <svg class="item-page-svg">
                   <use
@@ -539,8 +544,7 @@
             <use href="./images/svg/symbol-defs.svg#icon-close"></use>
           </svg>
         </button>
-        <form class="contacts-form"> 
-       
+        <form class="contacts-form">
           <p class="modal-title">Залиште свої дані, ми вам передзвонимо</p>
           <label class="contacts-form-field">
             <span class="contacts-form-field-wrapper">
@@ -595,10 +599,8 @@
               class="contact-form-text-desc visually-hidden"
             />
             <label class="contact-form-text-info" for="check">
-              <span>
-                Погоджуюся з розсилкою та приймаю&nbsp;
-              </span>
-              
+              <span> Погоджуюся з розсилкою та приймаю&nbsp; </span>
+
               <a href="#" class="contacts-form-link">Умови договору</a>
             </label>
           </div>
