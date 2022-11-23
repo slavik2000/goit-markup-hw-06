@@ -274,18 +274,18 @@ ul {
   margin-bottom: 28px;
 }
 
-.list-works {
+.works__list {
   display: flex;
 }
 
-.img-works {
+.works__img {
   position: relative;
   display: block;
   height: auto;
   max-width: 100%;
 }
 
-.text-works {
+.works__text {
   position: absolute;
   bottom: 0;
   background-color: rgba(47, 48, 58, 0.8);
@@ -300,11 +300,11 @@ ul {
   letter-spacing: 0.03em;
 }
 
-.item-works {
+.works__item {
   margin-left: 30px;
   position: relative;
 }
-.item-works:nth-child(1) {
+.works__item:nth-child(1) {
   margin-left: 0;
 }
 
@@ -312,7 +312,7 @@ ul {
   margin-right: 30px;
 }
 
-.main-list__item-page{
+.main-list__item-page {
   width: 270px;
 }
 
